@@ -1335,10 +1335,7 @@ if(TRUE){
   Info <- cbind(EXCSTOT_40, relCPS1, relCPS2, relCPS3)
   myfilePE_check <- file.path("G:/WINTER-SPRING 2020 Modelling/OUTPUT/EXCS/mainrun", paste0("E", "_",  pCO2sc, "_", "DOA", ".txt"))
   write.table(Info,file=myfilePE_check,sep=",",append=F,row.names=F,col.names=T)#Export data to file
-  #====================================================================================================================================
-  Info2 <- cbind(time_seq, out$fstrat_S1)
-  myfilePE_check <- file.path("G:/WINTER-SPRING 2020 Modelling/OUTPUT/EXCS/mainrun", paste0("E", "_",  pCO2sc, "_", "fstrat", ".txt"))
-  write.table(Info2,file=myfilePE_check,sep=",",append=F,row.names=F,col.names=T)#Export data to file
+  
   
 }
 #=================================================================================
